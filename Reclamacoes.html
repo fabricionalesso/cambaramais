@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas as Reclamações - Cambará+</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Cabeçalho com menu -->
+    <header>
+    <div class="container header-container">
+        <a href="index.html">
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-text">CAMBARÁ<span>+</span><br>O portal do cidadão</div>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Reclamacoes.html">Reclamações</a></li>
+                <li><a href="Sugestoes.html">Sugestões</a></li>
+                <li><a href="Resolucoes.html">Resoluções</a></li>
+                <li><a href="enviar.html">Enviar</a></li>
+                <li><a href="Enquetes.html">Enquetes</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main class="container">
+        <!-- Título destacado no lugar do banner -->
+        <section class="titulo-destacado">
+            <h1>Todas as Reclamações</h1>
+            <p>Veja todas as reclamações enviadas pelos cidadãos de Cambará. Acompanhe o status de cada uma e participe comentando e apoiando as que são importantes para você.</p>
+        </section>
+
+        <!-- Filtros e total -->
+        <div class="filtros">
+            <div class="total-reclamacoes">
+                Mostrando 12 de 48 reclamações
+            </div>
+            
+            <div class="filtro-grupo">
+                <label for="categoria">Filtrar por:</label>
+                <select id="categoria">
+                    <option value="todas">Todas as categorias</option>
+                    <option value="infraestrutura">Infraestrutura</option>
+                    <option value="transito">Trânsito</option>
+                    <option value="seguranca">Segurança</option>
+                    <option value="limpeza">Limpeza Pública</option>
+                    <option value="saude">Saúde</option>
+                    <option value="educacao">Educação</option>
+                </select>
+                
+                <select id="status">
+                    <option value="todos">Todos os status</option>
+                    <option value="pendente">Pendentes</option>
+                    <option value="andamento">Em andamento</option>
+                    <option value="resolvido">Resolvidos</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Grid de reclamações -->
+        <div class="reclamacoes-grid">
+            <!-- Linha 1 -->
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Iluminação pública" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Infraestrutura</span>
+                    <span class="reclamacao-status status-em-andamento">Em andamento</span>
+                    <h3>Falta de iluminação na Rua das Flores</h3>
+                    <p>Há mais de um mês que vários postes de iluminação estão apagados na Rua das Flores, próximo à escola municipal.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 5 dias</span>
+                        <span>120 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Problema no trânsito" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Trânsito</span>
+                    <span class="reclamacao-status status-pendente">Pendente</span>
+                    <h3>Semáforo quebrado causa congestionamentos</h3>
+                    <p>O semáforo da Avenida Brasil com a Rua Paraná está desregulado há duas semanas, causando engarrafamentos.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 2 semanas</span>
+                        <span>85 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Buraco na rua" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Infraestrutura</span>
+                    <span class="reclamacao-status status-resolvido">Resolvido</span>
+                    <h3>Buraco na Rua São Paulo</h3>
+                    <p>Grande buraco na Rua São Paulo que já havia causado danos a vários veículos. Risco de acidentes.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 1 mês</span>
+                        <span>64 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Coleta de lixo" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Limpeza Pública</span>
+                    <span class="reclamacao-status status-em-andamento">Em andamento</span>
+                    <h3>Atraso na coleta de lixo no Jardim Europa</h3>
+                    <p>Lixo acumulado nas calçadas devido ao atraso na coleta. Risco à saúde pública e mau cheiro.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 3 dias</span>
+                        <span>92 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Linha 2 -->
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ponto de ônibus" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Transporte</span>
+                    <span class="reclamacao-status status-pendente">Pendente</span>
+                    <h3>Falta de abrigo no ponto de ônibus central</h3>
+                    <p>Usuários do transporte público ficam expostos ao sol e chuva enquanto aguardam o ônibus.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 1 semana</span>
+                        <span>45 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Parque abandonado" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Lazer</span>
+                    <span class="reclamacao-status status-pendente">Pendente</span>
+                    <h3>Parque Central com equipamentos quebrados</h3>
+                    <p>Balanços e escorregadores quebrados há meses no parque. Crianças sem opções de lazer seguro.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 2 semanas</span>
+                        <span>78 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Esgoto a céu aberto" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Infraestrutura</span>
+                    <span class="reclamacao-status status-em-andamento">Em andamento</span>
+                    <h3>Esgoto a céu aberto na Rua XV de Novembro</h3>
+                    <p>Vazamento de esgoto há mais de um mês. Mau cheiro e risco de doenças para os moradores.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 4 dias</span>
+                        <span>110 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Placa de trânsito" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Trânsito</span>
+                    <span class="reclamacao-status status-resolvido">Resolvido</span>
+                    <h3>Placa de pare coberta por árvores</h3>
+                    <p>Placa de sinalização totalmente coberta pela vegetação, causando confusão e risco de acidentes.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 3 semanas</span>
+                        <span>33 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Linha 3 -->
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Calçada irregular" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Infraestrutura</span>
+                    <span class="reclamacao-status status-pendente">Pendente</span>
+                    <h3>Calçadas irregulares no centro</h3>
+                    <p>Pisos soltos e desnivelados causam quedas, especialmente de idosos e pessoas com deficiência.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 5 dias</span>
+                        <span>67 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Barulho excessivo" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Segurança</span>
+                    <span class="reclamacao-status status-em-andamento">Em andamento</span>
+                    <h3>Barulho excessivo de estabelecimento noturno</h3>
+                    <p>Som alto até altas horas da madrugada, perturbando o sono de moradores da região central.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 1 semana</span>
+                        <span>41 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Falta de vagas" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Trânsito</span>
+                    <span class="reclamacao-status status-pendente">Pendente</span>
+                    <h3>Falta de vagas para idosos no centro de saúde</h3>
+                    <p>Idosos precisam estacionar longe e caminhar por falta de vagas reservadas no centro de saúde.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 2 dias</span>
+                        <span>89 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="reclamacao-item">
+                <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Falta de sinalização" class="reclamacao-img">
+                <div class="reclamacao-text">
+                    <span class="content-category">Trânsito</span>
+                    <span class="reclamacao-status status-resolvido">Resolvido</span>
+                    <h3>Falta de faixa de pedestre próximo à escola</h3>
+                    <p>Crianças e pais correm risco ao atravessar a rua para acessar a escola municipal.</p>
+                    <div class="reclamacao-meta">
+                        <span>Enviado há 1 mês</span>
+                        <span>56 apoios</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Paginação -->
+        <div class="paginacao">
+            <button class="pagina-btn ativo">1</button>
+            <button class="pagina-btn">2</button>
+            <button class="pagina-btn">3</button>
+            <button class="pagina-btn">4</button>
+            <button class="pagina-btn">Próxima →</button>
+        </div>
+
+        <!-- Seção de envio -->
+        
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cambará+</h3>
+                    <p>Portal de reclamações e sugestões da<br> cidade de Cambará-PR.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                   <a href="index.html">Início</a>
+                    <a href="enviar.html">Enviar Reclamação/Sugestão/Elogio</a>
+                    <a href="resolucoes.html">Acompanhar Resoluções</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>E-mail: contato@cambaramais.com.br</p>
+                    <p>Telefone: (43) 9999-9999</p>
+                    <p>Endereço: Rua A, nº 999 - Centro - Cambará/PR</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Cambará+. Todos os direitos reservados. 
+                <br>Desenvolvido pelos alunos do curso Programador WEB - Instituto Bourbon.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

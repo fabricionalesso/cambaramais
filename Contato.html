@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cambará+ - Portal de Reclamações e Sugestões</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Cabeçalho com menu - EXATO MESMO DA PÁGINA PRINCIPAL -->
+    <header>
+    <div class="container header-container">
+        <a href="index.html">
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-text">CAMBARÁ<span>+</span><br>O portal do cidadão</div>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Reclamacoes.html">Reclamações</a></li>
+                <li><a href="Sugestoes.html">Sugestões</a></li>
+                <li><a href="Resolucoes.html">Resoluções</a></li>
+                <li><a href="enviar.html">Enviar</a></li>
+                <li><a href="Enquetes.html">Enquetes</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+ 
+
+    <main class="container">
+        <!-- Seção de contato -->
+        <section><br>
+            <h2 class="section-title" style="font-size: 40px;">Fale Conosco</h2>
+            
+            <div class="contact-container">
+                <!-- Informações de contato -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3><i class="info-icon">📞</i> Telefone</h3>
+                        <p>(43) 9999-9999 (WhatsApp)</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3><i class="info-icon">📧</i> E-mail</h3>
+                        <p>contato@cambaramais.com.br<br>
+                        suporte@cambaramais.com.br</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3><i class="info-icon">🏢</i> Endereço</h3>
+                        <p>Rua A, nº 999 - Centro - Cambará/PR</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3><i class="info-icon">⏰</i> Horário de Atendimento</h3>
+                        <p>Segunda a Sexta: 8h às 18h<br>
+                        Sábado: 8h às 12h</p>
+                    </div>
+                    
+                    <div class="additional-info">
+                        <h3>Resposta Rápida</h3>
+                        <p>Nossa equipe se compromete a responder todas as mensagens em até 48 horas úteis. Para questões urgentes, recomendamos o contato por telefone.</p>
+                    </div>
+                </div>
+                
+                <!-- Formulário de contato -->
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="post">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo <span>*</span></label>
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail <span>*</span></label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone para Contato <span>*</span></label>
+                            <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(43) 99999-9999" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto <span>*</span></label>
+                            <select id="assunto" name="assunto" class="form-control" required>
+                                <option value="">Selecione o assunto</option>
+                                <option value="duvida">Dúvida sobre o portal</option>
+                                <option value="sugestao">Sugestão para melhoria</option>
+                                <option value="problema">Problema técnico</option>
+                                <option value="parceria">Proposta de parceria</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem <span>*</span></label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Digite sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <p class="required-text"><span>*</span> Campos obrigatórios</p>
+                        
+                        <button type="submit" class="contact-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de envio adicional -->
+        <section class="submit-section">
+            <div class="container">
+                <h2 class="section-title">Quer fazer uma reclamação ou sugestão?</h2>
+                <p class="submit-text">Para reclamações ou sugestões sobre serviços públicos da cidade, utilize nosso formulário principal para que sua mensagem seja direcionada ao setor responsável.</p>
+                <a href="enviar.html" class="submit-btn">Enviar Reclamação ou Sugestão</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé - EXATO MESMO DA PÁGINA PRINCIPAL -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cambará+</h3>
+                    <p>Portal de reclamações e sugestões da<br> cidade de Cambará-PR.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <a href="index.html">Início</a>
+                    <a href="enviar.html">Enviar Reclamação/Sugestão/Elogio</a>
+                    <a href="resolucoes.html">Acompanhar Resoluções</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>E-mail: contato@cambaramais.com.br</p>
+                    <p>Telefone: (43) 9999-9999</p>
+                    <p>Endereço: Rua A, nº 999 - Centro - Cambará/PR</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Cambará+. Todos os direitos reservados. 
+                <br>Desenvolvido pelos alunos do curso Programador WEB - Instituto Bourbon.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Validação básica do formulário
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const assunto = document.getElementById('assunto').value;
+            const mensagem = document.getElementById('mensagem').value.trim();
+            
+            if (!nome || !email || !telefone || !assunto || !mensagem) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                event.preventDefault();
+                return;
+            }
+            
+            // Validação básica de e-mail
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um endereço de e-mail válido.');
+                event.preventDefault();
+                return;
+            }
+            
+            // Se tudo estiver válido, exibir mensagem de sucesso
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            event.preventDefault(); // Apenas para demonstração
+        });
+        
+        // Formatação do telefone
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length > 10) {
+                value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+            } else if (value.length > 6) {
+                value = value.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+            } else if (value.length > 2) {
+                value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+            } else if (value.length > 0) {
+                value = value.replace(/^(\d*)/, '($1');
+            }
+            
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>

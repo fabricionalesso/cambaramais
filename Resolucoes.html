@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoluções - Cambará+</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Cabeçalho com menu -->
+    <header>
+    <div class="container header-container">
+        <a href="index.html">
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-text">CAMBARÁ<span>+</span><br>O portal do cidadão</div>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Reclamacoes.html">Reclamações</a></li>
+                <li><a href="Sugestoes.html">Sugestões</a></li>
+                <li><a href="Resolucoes.html">Resoluções</a></li>
+                <li><a href="enviar.html">Enviar</a></li>
+                <li><a href="Enquetes.html">Enquetes</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="container">
+        <!-- Título destacado no lugar do banner -->
+        <section class="titulo-destacado">
+            <h1>Resoluções</h1>
+            <p>Confira as reclamações que foram solucionadas pela prefeitura de Cambará. Veja como os problemas dos cidadãos estão sendo resolvidos e acompanhe o progresso da nossa cidade.</p>
+        </section>
+
+        <!-- Estatísticas -->
+        <div class="estatisticas">
+            <div class="estatistica-item">
+                <div class="estatistica-numero">24</div>
+                <div class="estatistica-texto">Reclamações Resolvidas</div>
+            </div>
+            <div class="estatistica-item">
+                <div class="estatistica-numero">50%</div>
+                <div class="estatistica-texto">Taxa de Satisfação</div>
+            </div>
+            <div class="estatistica-item">
+                <div class="estatistica-numero">75</div>
+                <div class="estatistica-texto">Dias (Média de Resolução)</div>
+            </div>
+            <div class="estatistica-item">
+                <div class="estatistica-numero">4</div>
+                <div class="estatistica-texto">Resoluções no Último Mês</div>
+            </div>
+        </div>
+
+        <!-- Filtros e total -->
+        <div class="filtros">
+            <div class="total-resolucoes">
+                Mostrando 12 de 24 reclamações resolvidas
+            </div>
+            
+            <div class="filtro-grupo">
+                <label for="categoria">Filtrar por:</label>
+                <select id="categoria">
+                    <option value="todas">Todas as categorias</option>
+                    <option value="infraestrutura">Infraestrutura</option>
+                    <option value="transito">Trânsito</option>
+                    <option value="seguranca">Segurança</option>
+                    <option value="limpeza">Limpeza Pública</option>
+                    <option value="saude">Saúde</option>
+                    <option value="educacao">Educação</option>
+                </select>
+                
+                <select id="periodo">
+                    <option value="todos">Todos os períodos</option>
+                    <option value="ultimo-mes">Último mês</option>
+                    <option value="ultimos-3-meses">Últimos 3 meses</option>
+                    <option value="ultimo-ano">Último ano</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Grid de resoluções -->
+        <div class="resolucoes-grid">
+            <!-- Linha 1 -->
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Buraco na rua" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Infraestrutura</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Buraco na Rua São Paulo reparado</h3>
+                    <p>Grande buraco na Rua São Paulo que já havia causado danos a vários veículos. Risco de acidentes.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>A prefeitura realizou o reparo do asfalto em 2 dias úteis após a reclamação. Foram utilizados materiais de qualidade para garantir durabilidade.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 15/03/2025</span>
+                        <span>64 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Placa de trânsito" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Trânsito</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Placa de pare coberta por árvores</h3>
+                    <p>Placa de sinalização totalmente coberta pela vegetação, causando confusão e risco de acidentes.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Equipe de poda da prefeitura realizou a limpeza da vegetação em torno da placa. A sinalização agora está totalmente visível.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 10/03/2025</span>
+                        <span>33 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Falta de sinalização" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Trânsito</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Faixa de pedestre próxima à escola</h3>
+                    <p>Crianças e pais correm risco ao atravessar a rua para acessar a escola municipal.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Foram pintadas duas faixas de pedestre em frente à escola e instalada sinalização vertical de "Área Escolar".</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 28/02/2025</span>
+                        <span>56 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lixeiras" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Limpeza Pública</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Falta de lixeiras no Parque Central</h3>
+                    <p>Ausência de recipientes para lixo causa acúmulo de resíduos no principal parque da cidade.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Foram instaladas 10 novas lixeiras ao redor do parque, com coleta diária reforçada nos finais de semana.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 20/02/2025</span>
+                        <span>42 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Linha 2 -->
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Iluminação pública" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Infraestrutura</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Iluminação na Rua das Palmeiras</h3>
+                    <p>Postes de iluminação queimados há semanas, deixando a rua escura e perigosa à noite.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Todas as lâmpadas queimadas foram substituídas por modelos de LED, que são mais econômicos e duradouros.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 15/02/2025</span>
+                        <span>78 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Parque infantil" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Lazer</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Balanços quebrados no parque</h3>
+                    <p>Equipamentos de playground quebrados há meses, sem manutenção.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Todos os equipamentos foram reparados ou substituídos. Foi realizada vistoria geral em todos os parques da cidade.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 10/02/2025</span>
+                        <span>91 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Esgoto" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Infraestrutura</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Vazamento de esgoto na Rua B</h3>
+                    <p>Vazamento persistente de esgoto, causando mau cheiro e risco à saúde.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Equipe da Sanepar realizou reparo na tubulação danificada. A rua foi limpa e desinfetada após o conserto.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 05/02/2025</span>
+                        <span>67 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ponto de ônibus" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Transporte</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Abrigo no ponto de ônibus central</h3>
+                    <p>Usuários do transporte público expostos ao sol e chuva.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Foi instalado um novo abrigo com bancos, cobertura e informação sobre horários dos ônibus.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 01/02/2025</span>
+                        <span>54 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Linha 3 -->
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Calçada" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Infraestrutura</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Calçadas irregulares no centro</h3>
+                    <p>Pisos soltos e desnivelados causando quedas, especialmente de idosos.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Foram reparados 200m de calçadas nas ruas centrais, priorizando acessibilidade para pessoas com mobilidade reduzida.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 25/01/2025</span>
+                        <span>88 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Semáforo" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Trânsito</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Semáforo desregulado na Avenida Brasil</h3>
+                    <p>Semáforo com defeito causando congestionamentos e risco de acidentes.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Equipe de manutenção substituiu toda a placa eletrônica do semáforo. Sistema foi recalibrado para fluxo ideal.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 20/01/2025</span>
+                        <span>73 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vagas para idosos" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Trânsito</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Vagas para idosos no centro de saúde</h3>
+                    <p>Falta de vagas reservadas para idosos no centro de saúde municipal.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Foram criadas 5 vagas exclusivas para idosos próximas à entrada principal, com sinalização adequada.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 15/01/2025</span>
+                        <span>65 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="resolucao-item">
+                <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Coleta de lixo" class="resolucao-img">
+                <div class="resolucao-text">
+                    <span class="content-category">Limpeza Pública</span>
+                    <span class="resolucao-status">Resolvido</span>
+                    <h3>Atraso na coleta no Jardim Europa</h3>
+                    <p>Lixo acumulado devido a atrasos na coleta, causando mau cheiro.</p>
+                    
+                    <div class="resolucao-detalhes">
+                        <h4>Como foi resolvido:</h4>
+                        <p>Foi ajustado o roteiro de coleta e contratado um caminhão adicional para a região. Horários foram otimizados.</p>
+                    </div>
+                    
+                    <div class="resolucao-meta">
+                        <span>Resolvido em 10/01/2025</span>
+                        <span>59 apoios</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Paginação -->
+        <div class="paginacao">
+            <button class="pagina-btn ativo">1</button>
+            <button class="pagina-btn">2</button>
+            <button class="pagina-btn">Próxima →</button>
+        </div>
+
+       
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cambará+</h3>
+                    <p>Portal de reclamações e sugestões da<br> cidade de Cambará-PR.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                   <a href="index.html">Início</a>
+                    <a href="enviar.html">Enviar Reclamação/Sugestão/Elogio</a>
+                    <a href="resolucoes.html">Acompanhar Resoluções</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>E-mail: contato@cambaramais.com.br</p>
+                    <p>Telefone: (43) 9999-9999</p>
+                    <p>Endereço: Rua A, nº 999 - Centro - Cambará/PR</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Cambará+. Todos os direitos reservados. 
+                <br>Desenvolvido pelos alunos do curso Programador WEB - Instituto Bourbon.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

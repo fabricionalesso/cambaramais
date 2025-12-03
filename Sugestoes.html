@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas as Sugestões - Cambará+</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Cabeçalho com menu -->
+   <header>
+    <div class="container header-container">
+        <a href="index.html">
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-text">CAMBARÁ<span>+</span><br>O portal do cidadão</div>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Reclamacoes.html">Reclamações</a></li>
+                <li><a href="Sugestoes.html">Sugestões</a></li>
+                <li><a href="Resolucoes.html">Resoluções</a></li>
+                <li><a href="enviar.html">Enviar</a></li>
+                <li><a href="Enquetes.html">Enquetes</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="container">
+        <!-- Título destacado no lugar do banner -->
+        <section class="titulo-destacado">
+            <h1>Todas as Sugestões</h1>
+            <p>Veja todas as sugestões enviadas pelos cidadãos de Cambará para melhorar nossa cidade. Apoie as ideias que você considera importantes e acompanhe o status de implementação de cada uma.</p>
+        </section>
+
+        <!-- Filtros e total -->
+        <div class="filtros">
+            <div class="total-sugestoes">
+                Mostrando 12 de 36 sugestões
+            </div>
+            
+            <div class="filtro-grupo">
+                <label for="categoria">Filtrar por:</label>
+                <select id="categoria">
+                    <option value="todas">Todas as categorias</option>
+                    <option value="urbanismo">Urbanismo</option>
+                    <option value="lazer">Lazer e Cultura</option>
+                    <option value="transito">Trânsito e Mobilidade</option>
+                    <option value="sustentabilidade">Sustentabilidade</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="seguranca">Segurança Pública</option>
+                </select>
+                
+                <select id="status">
+                    <option value="todos">Todos os status</option>
+                    <option value="analise">Em análise</option>
+                    <option value="considerada">Considerada</option>
+                    <option value="implementada">Implementada</option>
+                    <option value="arquivada">Arquivada</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Grid de sugestões -->
+        <div class="sugestoes-grid">
+            <!-- Linha 1 -->
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ciclovia" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Mobilidade</span>
+                    <span class="sugestao-status status-implementada">Implementada</span>
+                    <h3>Criar rede de ciclovias na cidade</h3>
+                    <p>Implementação de ciclovias interligando bairros ao centro, promovendo mobilidade sustentável e reduzindo tráfego.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 2 meses</span>
+                        <span>215 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Feira orgânica" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Sustentabilidade</span>
+                    <span class="sugestao-status status-analise">Em análise</span>
+                    <h3>Feira de produtores orgânicos semanais</h3>
+                    <p>Estabelecer feira semanal no centro com produtos orgânicos de agricultores locais, promovendo alimentação saudável.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 3 semanas</span>
+                        <span>178 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Wi-Fi público" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Tecnologia</span>
+                    <span class="sugestao-status status-considerada">Considerada</span>
+                    <h3>Wi-Fi gratuito em praças públicas</h3>
+                    <p>Instalação de pontos de internet sem fio gratuitos nas principais praças e áreas de lazer da cidade.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 1 mês</span>
+                        <span>142 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Biblioteca pública" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Cultura</span>
+                    <span class="sugestao-status status-analise">Em análise</span>
+                    <h3>Ampliação do horário da biblioteca municipal</h3>
+                    <p>Estender funcionamento para noites e finais de semana, atendendo estudantes e trabalhadores.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 2 semanas</span>
+                        <span>89 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Linha 2 -->
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Horta comunitária" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Sustentabilidade</span>
+                    <span class="sugestao-status status-implementada">Implementada</span>
+                    <h3>Hortas comunitárias em áreas públicas</h3>
+                    <p>Criação de hortas comunitárias em terrenos ociosos, promovendo alimentação saudável e integração social.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 3 meses</span>
+                        <span>164 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Reciclagem" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Meio Ambiente</span>
+                    <span class="sugestao-status status-considerada">Considerada</span>
+                    <h3>Pontos de coleta seletiva em todos os bairros</h3>
+                    <p>Instalar coletores para reciclagem em locais estratégicos de cada bairro, facilitando o descarte correto.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 1 mês</span>
+                        <span>203 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Aplicativo municipal" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Tecnologia</span>
+                    <span class="sugestao-status status-analise">Em análise</span>
+                    <h3>Aplicativo para serviços municipais</h3>
+                    <p>Desenvolver app para agendamento de serviços, pagamento de taxas e comunicação direta com a prefeitura.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 2 semanas</span>
+                        <span>156 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Eventos culturais" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Cultura</span>
+                    <span class="sugestao-status status-analise">Em análise</span>
+                    <h3>Festival anual de cultura local</h3>
+                    <p>Realizar festival anual com música, arte, gastronomia e tradições locais para valorizar a cultura cambaraense.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 3 semanas</span>
+                        <span>98 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Linha 3 -->
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Energia solar" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Sustentabilidade</span>
+                    <span class="sugestao-status status-considerada">Considerada</span>
+                    <h3>Instalação de painéis solares em prédios públicos</h3>
+                    <p>Usar energia renovável para reduzir custos com eletricidade e promover sustentabilidade ambiental.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 1 mês</span>
+                        <span>187 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Praça para pets" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Lazer</span>
+                    <span class="sugestao-status status-implementada">Implementada</span>
+                    <h3>Parque para cães em cada região da cidade</h3>
+                    <p>Criar áreas específicas para pets com equipamentos e espaços seguros para animais de estimação.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 4 meses</span>
+                        <span>132 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Transporte escolar" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Educação</span>
+                    <span class="sugestao-status status-analise">Em análise</span>
+                    <h3>Transporte escolar gratuito para estudantes</h3>
+                    <p>Oferecer transporte gratuito para estudantes de baixa renda facilitando o acesso à educação.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 2 semanas</span>
+                        <span>121 apoios</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="sugestao-item">
+                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Telecentro" class="sugestao-img">
+                <div class="sugestao-text">
+                    <span class="content-category">Tecnologia</span>
+                    <span class="sugestao-status status-arquivada">Arquivada</span>
+                    <h3>Telecentros comunitários para inclusão digital</h3>
+                    <p>Espaços com computadores e internet para capacitação digital de idosos e pessoas em vulnerabilidade social.</p>
+                    <div class="sugestao-meta">
+                        <span>Enviado há 2 meses</span>
+                        <span>76 apoios</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Paginação -->
+        <div class="paginacao">
+            <button class="pagina-btn ativo">1</button>
+            <button class="pagina-btn">2</button>
+            <button class="pagina-btn">3</button>
+            <button class="pagina-btn">Próxima →</button>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cambará+</h3>
+                    <p>Portal de reclamações e sugestões da<br> cidade de Cambará-PR.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                   <a href="index.html">Início</a>
+                    <a href="enviar.html">Enviar Reclamação/Sugestão/Elogio</a>
+                    <a href="resolucoes.html">Acompanhar Resoluções</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>E-mail: contato@cambaramais.com.br</p>
+                    <p>Telefone: (43) 9999-9999</p>
+                    <p>Endereço: Rua A, nº 999 - Centro - Cambará/PR</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Cambará+. Todos os direitos reservados. 
+                <br>Desenvolvido pelos alunos do curso Programador WEB - Instituto Bourbon.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

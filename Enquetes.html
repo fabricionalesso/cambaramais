@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquetes - Cambará+ - Portal de Reclamações e Sugestões</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Cabeçalho com menu -->
+    <header>
+    <div class="container header-container">
+        <a href="index.html">
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-text">CAMBARÁ<span>+</span><br>O portal do cidadão</div>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Reclamacoes.html">Reclamações</a></li>
+                <li><a href="Sugestoes.html">Sugestões</a></li>
+                <li><a href="Resolucoes.html">Resoluções</a></li>
+                <li><a href="enviar.html">Enviar</a></li>
+                <li><a href="Enquetes.html">Enquetes</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+     <main class="container">
+	
+	<section class="titulo-destacado">
+            <h1>Enquetes</h1>
+            <p>Participe das nossas enquetes e ajude a identificar as principais prioridades para Cambará. 
+			Sua opinião é essencial para melhorar nossa cidade!</p>
+			</section>
+
+   
+        <div class="enquetes-grid">
+            <!-- Enquete 1: Segurança -->
+            <div class="enquete-wrapper">
+                <div class="enquete">
+                    <div class="enquete-header">
+                        <div class="enquete-category">Segurança</div>
+                        <h3 class="enquete-title">Segurança Pública em Cambará</h3>
+                        <p class="enquete-description">Enquete sobre medidas de segurança pública na cidade</p>
+                    </div>
+                    
+                    <div class="enquete-content">
+                        <p class="enquete-question">Na sua opinião, qual é a medida mais urgente para melhorar a segurança pública em Cambará?</p>
+                        
+                        <div class="enquete-options">
+                            <div class="option">
+                                <input type="radio" id="seguranca1" name="seguranca" value="policiamento">
+                                <label for="seguranca1" class="option-label">Aumento do policiamento nas ruas, especialmente à noite</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" id="seguranca2" name="seguranca" value="iluminacao">
+                                <label for="seguranca2" class="option-label">Melhoria da iluminação pública em áreas escuras</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" id="seguranca3" name="seguranca" value="cameras">
+                                <label for="seguranca3" class="option-label">Instalação de câmeras de segurança em pontos estratégicos</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" id="seguranca4" name="seguranca" value="programas">
+                                <label for="seguranca4" class="option-label">Programas sociais para jovens em situação de vulnerabilidade</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" id="seguranca5" name="seguranca" value="outra">
+                                <label for="seguranca5" class="option-label">Outra medida (especificar nos comentários)</label>
+                            </div>
+                        </div>
+                        
+                        <div class="enquete-footer">
+                            <div class="votes-count">Até o momento: 347 votos</div>
+                            <button class="submit-btn enquete-btn">Votar</button>
+                        </div>
+                        
+                        <!-- Resultados da enquete (inicialmente ocultos, seriam mostrados após votar) -->
+                        <div class="enquete-results" style="display: none;">
+                            <h4 class="results-title">Resultados Parciais:</h4>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Aumento do policiamento nas ruas</div>
+                                <div class="result-bar" style="width: 45%;">
+                                    <div class="result-percentage">45%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Melhoria da iluminação pública</div>
+                                <div class="result-bar" style="width: 28%;">
+                                    <div class="result-percentage">28%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Instalação de câmeras de segurança</div>
+                                <div class="result-bar" style="width: 15%;">
+                                    <div class="result-percentage">15%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Programas sociais para jovens</div>
+                                <div class="result-bar" style="width: 9%;">
+                                    <div class="result-percentage">9%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Outra medida</div>
+                                <div class="result-bar" style="width: 3%;">
+                                    <div class="result-percentage">3%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="total-votes">Total de votos: 347</div>
+                        </div>
+                        
+                        <!-- Mensagem após votar -->
+                        <div class="enquete-completed" style="display: none;">
+                            Obrigado por votar! Sua opinião foi registrada com sucesso.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enquete 2: Melhorias Prioritárias -->
+            <div class="enquete-wrapper">
+                <div class="enquete">
+                    <div class="enquete-header">
+                        <div class="enquete-category">Prioridades</div>
+                        <h3 class="enquete-title">Melhorias Prioritárias para Cambará</h3>
+                        <p class="enquete-description">Enquete sobre as áreas que mais precisam de investimento</p>
+                    </div>
+                    
+                    <div class="enquete-content">
+                        <p class="enquete-question">Em sua opinião, qual área precisa de mais investimentos e melhorias urgentes em Cambará? <span class="enquete-priority">PRINCIPAL</span></p>
+                        
+                        <div class="enquete-options">
+                            <div class="option">
+                                <input type="radio" id="melhorias1" name="melhorias" value="saude">
+                                <label for="melhorias1" class="option-label">
+                                    <strong>Saúde</strong> - Melhorias em postos de saúde, equipamentos médicos e redução de filas
+                                </label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" id="melhorias2" name="melhorias" value="educacao">
+                                <label for="melhorias2" class="option-label">
+                                    <strong>Educação</strong> - 
+                                    Reforma de escolas e capacitação de professores
+                                </label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" id="melhorias3" name="melhorias" value="seguranca">
+                                <label for="melhorias3" class="option-label">
+                                    <strong>Segurança Pública</strong> - 
+                                    Mais policiamento e câmeras de segurança
+                                </label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" id="melhorias4" name="melhorias" value="transito">
+                                <label for="melhorias4" class="option-label">
+                                    <strong>Trânsito</strong> - 
+                                    Melhorias no asfalto e sinalização
+                                </label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" id="melhorias5" name="melhorias" value="meioambiente">
+                                <label for="melhorias5" class="option-label">
+                                    <strong>Meio Ambiente</strong> - Coleta seletiva, parques e arborização
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="enquete-footer">
+                            <div class="votes-count">Até o momento: 589 votos</div>
+                            <button class="submit-btn enquete-btn">Votar</button>
+                        </div>
+                        
+                        <!-- Resultados da enquete (inicialmente ocultos, seriam mostrados após votar) -->
+                        <div class="enquete-results" style="display: none;">
+                            <h4 class="results-title">Resultados Parciais:</h4>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Saúde - Postos de saúde e equipamentos</div>
+                                <div class="result-bar" style="width: 32%; background-color: #e53935;">
+                                    <div class="result-percentage">32%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Educação - Escolas e materiais didáticos</div>
+                                <div class="result-bar" style="width: 25%; background-color: #3949ab;">
+                                    <div class="result-percentage">25%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Segurança - Policiamento e iluminação</div>
+                                <div class="result-bar" style="width: 20%; background-color: #1e3a5f;">
+                                    <div class="result-percentage">20%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Trânsito - Asfalto e transporte público</div>
+                                <div class="result-bar" style="width: 15%; background-color: #43a047;">
+                                    <div class="result-percentage">15%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="option-result">
+                                <div class="result-label">Meio Ambiente - Coleta seletiva e parques</div>
+                                <div class="result-bar" style="width: 8%; background-color: #00897b;">
+                                    <div class="result-percentage">8%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="total-votes">Total de votos: 589</div>
+                        </div>
+                        
+                        <!-- Mensagem após votar -->
+                        <div class="enquete-completed" style="display: none;">
+                            Obrigado por votar! Sua opinião será encaminhada ao gabinete do prefeito.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cambará+</h3>
+                    <p>Portal de reclamações e sugestões da<br> cidade de Cambará-PR.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <a href="index.html">Início</a>
+                    <a href="enviar.html">Enviar Reclamação/Sugestão/Elogio</a>
+                    <a href="resolucoes.html">Acompanhar Resoluções</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>E-mail: contato@cambaramais.com.br</p>
+                    <p>Telefone: (43) 9999-9999</p>
+                    <p>Endereço: Rua A, nº 999 - Centro - Cambará/PR</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Cambará+. Todos os direitos reservados. 
+                <br>Desenvolvido pelos alunos do curso Programador WEB - Instituto Bourbon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para simular o funcionamento das enquetes
+        document.addEventListener('DOMContentLoaded', function() {
+            const voteButtons = document.querySelectorAll('.enquete-btn');
+            
+            voteButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const enquete = this.closest('.enquete-content');
+                    const options = enquete.querySelectorAll('input[type="radio"]');
+                    let selected = false;
+                    
+                    // Verifica se alguma opção foi selecionada
+                    options.forEach(option => {
+                        if (option.checked) {
+                            selected = true;
+                        }
+                    });
+                    
+                    if (!selected) {
+                        alert('Por favor, selecione uma opção antes de votar.');
+                        return;
+                    }
+                    
+                    // Simula o envio do voto
+                    const results = enquete.querySelector('.enquete-results');
+                    const completed = enquete.querySelector('.enquete-completed');
+                    const footer = enquete.querySelector('.enquete-footer');
+                    
+                    // Atualiza contador de votos
+                    const votesCount = footer.querySelector('.votes-count');
+                    const currentVotes = parseInt(votesCount.textContent.match(/\d+/)[0]);
+                    votesCount.textContent = `Até o momento: ${currentVotes + 1} votos`;
+                    
+                    // Mostra resultados e mensagem de agradecimento
+                    results.style.display = 'block';
+                    completed.style.display = 'block';
+                    
+                    // Desabilita os botões de rádio
+                    options.forEach(option => {
+                        option.disabled = true;
+                    });
+                    
+                    // Muda o texto do botão
+                    this.textContent = 'Voto Computado';
+                    this.disabled = true;
+                    this.style.backgroundColor = '#4CAF50';
+                    this.style.borderColor = '#4CAF50';
+                    
+                    // Rola a página para mostrar os resultados
+                    results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    
+                    // Para a enquete principal, mostra mensagem especial
+                    const isPriorityEnquete = enquete.querySelector('.enquete-priority');
+                    if (isPriorityEnquete) {
+                        setTimeout(() => {
+                            alert('Obrigado por participar da nossa enquete principal! Sua opinião será considerada no planejamento das prioridades da cidade.');
+                        }, 500);
+                    }
+                });
+            });
+            
+            // Adiciona efeito visual quando o usuário passa o mouse sobre as opções
+            const options = document.querySelectorAll('.option');
+            options.forEach(option => {
+                option.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(5px)';
+                });
+                
+                option.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
