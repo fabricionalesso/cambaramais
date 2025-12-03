@@ -52,6 +52,12 @@ header {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px;
+	transition: all 0.5s ease;
+	
+}
+
+.logo:hover {
+	transform: scale(1.04);
 }
 
 .logo-img {
@@ -88,15 +94,17 @@ nav ul li a {
     font-size: 17px;
     padding: 8px 9px;
     border-radius: 4px;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     text-transform: capitalize;
     border: solid 1px #ff8b5c;
 }
 
 nav ul li a:hover {
     background-color: #0f1f3d;
+	border-radius: 13px;
     color: #ff6b35;
-    transform: translateY(-2px);
+	
+    
 }
 
 /* Banner principal */
@@ -107,7 +115,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     text-align: center;
 	 background: 
         linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
@@ -118,6 +126,7 @@ nav ul li a:hover {
 	
 	
 }
+
 
 .banner-content {
     color: white;
@@ -154,7 +163,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 30px;
     color: #1e3a5f;
-    font-size: 28px;
+    font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
@@ -185,14 +194,14 @@ nav ul li a:hover {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    border: 1px solid #eaeaea;
+    transition: all 0.8s ease;
+    border: 3px solid #eaeaea;
 }
 
 .content-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-11px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-    border-color: #4a7c9c;
+    border-color: #ff6b35;
 }
 
 .content-img {
@@ -646,7 +655,7 @@ footer {
 }
 
 .contact-info {
-    flex: 1 1 300px;
+    flex: 1 1 25%;
     background-color: white;
     border-radius: 8px;
     padding: 30px;
@@ -655,7 +664,7 @@ footer {
 }
 
 .contact-form {
-    flex: 2 1 500px;
+    flex: 2 1 71%;
     background-color: white;
     border-radius: 8px;
     padding: 30px;
