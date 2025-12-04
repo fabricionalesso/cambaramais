@@ -6,158 +6,270 @@
     <title>Fechamento da Yoki/General Mills impacta Cambará - Cambará+</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo adicional para aumentar a imagem */
+        .photo-container {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        /* Estilo para imagens secundárias */
+        .medium-photo-container {
+            width: 80%;
+            height: 400px;
+            border-radius: 10px;
+            margin: 30px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .medium-photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        /* Tribute box estilizado */
+        .impact-box {
+            background-color: #f8f9fa;
+            border: 2px solid #1e3a5f;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(30, 58, 95, 0.1);
+        }
+        
+        /* Ajuste para ocupar 100% da largura sem sidebar */
+        .main-content-single {
+            width: 100%;
+            margin: 30px 0;
+        }
+        
+        .post-section-full {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .photo-container {
+                height: 350px;
+            }
+            
+            .medium-photo-container {
+                width: 90%;
+                height: 300px;
+                margin: 20px auto;
+            }
+            
+            .post-section-full {
+                padding: 25px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .photo-container {
+                height: 280px;
+            }
+            
+            .medium-photo-container {
+                width: 95%;
+                height: 250px;
+            }
+            
+            .post-section-full {
+                padding: 20px;
+            }
+            
+            .impact-box {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
-<header>
-    <div class="container header-container">
-        <a href="index.html">
-            <div class="logo">
-                <div class="logo-img"></div>
-                <div class="logo-text">CAMBARÁ<span>+</span><br>O portal do cidadão</div>
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="Reclamacoes.html">Reclamações</a></li>
-                <li><a href="Sugestoes.html">Sugestões</a></li>
-                <li><a href="Resolucoes.html">Resoluções</a></li>
-                <li><a href="enviar.html">Enviar</a></li>
-                <li><a href="Enquetes.html">Enquetes</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="Contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main class="container">
-
-  
-
-        <section class="post-section" >
-
-            <div class="post-header">
-                <span class="post-category">Economia e Trabalho</span>
-                <h1 class="post-title">Fechamento da Yoki/General Mills gera crise econômica e incerteza em Cambará</h1>
-                <div class="post-meta">
-                    <span><span class="icon">📅</span> Postado em: 03 de Dezembro, 2025</span>
-                    <span><span class="icon">👁️</span> 1.478 visualizações</span>
-                    <span><span class="icon">💬</span> 112 comentários</span>
+    <!-- Cabeçalho com menu -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <div class="logo-text">CAMBARÁ<span>+</span><br>O portal do cidadão</div>
                 </div>
-            </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="Reclamacoes.html">Reclamações</a></li>
+                    <li><a href="Sugestoes.html">Sugestões</a></li>
+                    <li><a href="Resolucoes.html">Resoluções</a></li>
+                    <li><a href="enviar.html">Enviar</a></li>
+                    <li><a href="Enquetes.html">Enquetes</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <img class="post-medium-img" src="https://i.imgur.com/14NW64t.jpeg" alt="Fachada da fábrica Yoki/General Mills em Cambará">
-
-            <div class="post-content">
-
-                <div class="warning-box"><br>
-                    <strong>⚠️ CRISE ECONÔMICA MUNICIPAL:</strong> O encerramento da unidade da Yoki/General Mills, após mais de 40 anos de operações, causa impacto profundo e estrutural na economia de Cambará, afetando centenas de famílias e o comércio local.
+    <main class="container">
+        <!-- Área principal única (sem sidebar) -->
+        <div class="main-content-single">
+            <section class="post-section-full">
+                <div class="post-header">
+                    <span class="post-category">Economia e Trabalho</span>
+                    <h1 class="post-title">Fechamento da Yoki/General Mills gera crise econômica e incerteza em Cambará</h1>
+                    <div class="post-meta">
+                        <span><span class="icon">📅</span> Postado em: 03 de Dezembro, 2025</span>
+                        <span><span class="icon">👁️</span> 1.478 visualizações</span>
+                        <span><span class="icon">💬</span> 112 comentários</span>
+                    </div>
                 </div>
 
-                <p>A economia local de Cambará enfrenta um dos momentos mais desafiadores de sua história recente com o fechamento definitivo da fábrica da Yoki/General Mills. Durante mais de quatro décadas, a unidade industrial foi um dos principais pilares econômicos do município, gerando empregos diretos e sustentando uma cadeia produtiva que incluía fornecedores, transportadores e o comércio local. Seu encerramento abrupto deixou centenas de trabalhadores em situação de vulnerabilidade e criou um vácuo econômico que afeta toda a região.</p>
+                <!-- Imagem principal AMPLIADA -->
+                <div class="photo-container">
+                    <img src="https://i.imgur.com/14NW64t.jpeg" alt="Fachada da fábrica Yoki/General Mills em Cambará">
+                </div>
+                <div class="photo-caption">
+                    Fachada da fábrica Yoki/General Mills em Cambará, após o fechamento que afetou centenas de famílias.
+                </div>
 
-                <h3>🔎 Anúncio inesperado e impactos imediatos</h3>
-                <p>O anúncio do encerramento das operações pegou funcionários e a comunidade de surpresa. A fábrica, instalada há gerações na cidade, era responsável por uma parcela significativa da movimentação financeira local. Com a paralisação, setores como alimentação, combustíveis, pequenos comércios e serviços já registram queda substancial no movimento, com estimativas de redução de até 30% no faturamento desses estabelecimentos.</p>
+                <div class="post-content">
+                    <div class="warning-box">
+                        <strong>⚠️ CRISE ECONÔMICA MUNICIPAL:</strong> O encerramento da unidade da Yoki/General Mills, após mais de 40 anos de operações, causa impacto profundo e estrutural na economia de Cambará, afetando centenas de famílias e o comércio local.
+                    </div>
 
-                <h3>🚨 Aumento do desemprego e falhas na realocação</h3>
+                    <p>A economia local de Cambará enfrenta um dos momentos mais desafiadores de sua história recente com o fechamento definitivo da fábrica da Yoki/General Mills. Durante mais de quatro décadas, a unidade industrial foi um dos principais pilares econômicos do município, gerando empregos diretos e sustentando uma cadeia produtiva que incluía fornecedores, transportadores e o comércio local. Seu encerramento abrupto deixou centenas de trabalhadores em situação de vulnerabilidade e criou um vácuo econômico que afeta toda a região.</p>
 
+                    <h3>🔎 Anúncio inesperado e impactos imediatos</h3>
+                    <p>O anúncio do encerramento das operações pegou funcionários e a comunidade de surpresa. A fábrica, instalada há gerações na cidade, era responsável por uma parcela significativa da movimentação financeira local. Com a paralisação, setores como alimentação, combustíveis, pequenos comércios e serviços já registram queda substancial no movimento, com estimativas de redução de até 30% no faturamento desses estabelecimentos.</p>
+
+                    <h3>🚨 Aumento do desemprego e falhas na realocação</h3>
+
+                    <p>A proposta da empresa de realocar parte dos funcionários para uma unidade em cidade vizinha enfrenta graves obstáculos logísticos. A ausência de transporte intermunicipal eficiente e acessível torna inviável para a maioria dos trabalhadores aceitar a transferência. Muitos não possuem veículo próprio e o custo de deslocamento diário superaria o valor do salário recebido. Desta forma, a alternativa oferecida pela empresa mostra-se ineficaz, elevando dramaticamente os índices de desemprego formal no município.</p>
+
+                    <div class="post-status">
+                        <div class="status-label">📉 Situação atual crítica:</div>
+                        <div>O município enfrenta um aumento acelerado no número de desempregados, afetando diretamente o comércio, a arrecadação municipal e a estabilidade social. Projeções indicam que o fechamento pode resultar na perda indireta de até 800 postos de trabalho na região, criando um efeito cascata que pode durar anos.</div>
+                    </div>
+
+                    <div class="impact-box">
+                        <h3 style="color: #1e3a5f; margin-bottom: 15px;">Impacto Social</h3>
+                        <p style="font-size: 18px; margin-bottom: 10px;"><strong>Mais de 350 famílias diretamente afetadas</strong></p>
+                        <p style="margin-bottom: 15px;">Gerações de trabalhadores dependiam da fábrica como fonte única de renda</p>
+                        <p style="font-style: italic; color: #555; border-top: 1px solid #eaeaea; padding-top: 15px; margin-top: 15px;">"Fechar uma fábrica com 40 anos não é apenas uma decisão empresarial - é romper com a história de uma comunidade inteira." - Liderança sindical</p>
+                    </div>
+
+                    <h3>📋 Propostas estratégicas para mitigação da crise</h3>
+                    
+                    <!-- Imagem secundária -->
+                    <div class="medium-photo-container">
+                        <img src="https://i.imgur.com/rxC27t6.jpeg" alt="Reunião entre trabalhadores e representantes sindicais">
+                    </div>
+                    <div class="photo-caption">
+                        Reunião entre trabalhadores e representantes sindicais discutindo soluções para a crise.
+                    </div>
+
+                    <p>Especialistas em desenvolvimento econômico regional e lideranças comunitárias apontam que o momento exige respostas coordenadas e imediatas. Diversas frentes de ação são consideradas prioritárias para amenizar os impactos socioeconômicos:</p>
+
+                    <div class="solution-box">
+                        <h4>📋 Plano de Ação Estratégico Recomendado:</h4>
+                        <ul>
+                            <li><strong>Transporte subsidiado emergencial:</strong> Negociação urgente com empresas de transporte e governo estadual para criação de linhas intermunicipais com tarifas reduzidas ou gratuidade para trabalhadores realocados.</li>
+                            <li><strong>Programa de requalificação profissional acelerada:</strong> Parceria com SENAI, SENAC e instituições de ensino para cursos de curta duração focados em setores com demanda regional.</li>
+                            <li><strong>Fomento ao microempreendedorismo:</strong> Linhas de crédito facilitadas, assessoria técnica e simplificação burocrática para trabalhadores que desejam iniciar negócios próprios.</li>
+                            <li><strong>Atração de novas indústrias:</strong> Elaboração de um plano de incentivos fiscais e logísticos para atrair empresas de setores compatíveis com a mão de obra disponível.</li>
+                            <li><strong>Rede de apoio psicossocial:</strong> Criação de programas municipais de assistência psicológica e social para famílias afetadas pelo desemprego.</li>
+                            <li><strong>Bolsa-transporte emergencial:</strong> Auxílio financeiro temporário para custear deslocamento até novas oportunidades de emprego.</li>
+                            <li><strong>Feiras de emprego regionais:</strong> Organização de eventos que conectem trabalhadores a empregadores de cidades vizinhas.</li>
+                        </ul>
+                    </div>
+
+                    <h3>📉 Crise estrutural no transporte e mobilidade</h3>
+                    <p>A precariedade do transporte regional, já conhecida pela população, revelou-se um dos principais obstáculos na crise. Sem linhas regulares, com horários inadequados para turnos industriais e tarifas elevadas, a mobilidade dos trabalhadores torna-se economicamente inviável, impedindo que oportunidades de emprego em cidades vizinhas sejam verdadeiramente acessíveis. Esta deficiência estrutural amplifica os efeitos negativos do fechamento da fábrica.</p>
+
+                    <h3>📊 Impactos em cadeia na economia local</h3>
+                    <p>Além dos empregos diretos perdidos, o fechamento afeta profundamente a economia circular de Cambará. Estabelecimentos comerciais que dependiam da movimentação dos funcionários já registram quedas significativas. O setor imobiliário também sente os efeitos, com aumento de oferta de imóveis para aluguel e redução nos preços, indicando possível êxodo de famílias em busca de oportunidades em outras cidades. A arrecadação municipal com ISS e outros tributos também sofrerá redução significativa.</p>
+
+                    <div class="warning-box">
+                        <strong>📢 RESPONSABILIDADE SOCIAL EMPRESARIAL:</strong> 
+                        <p style="margin-top: 10px;">O caso da Yoki/General Mills levanta questões importantes sobre a responsabilidade social de grandes corporações em comunidades onde atuam por décadas. Especialistas defendem que transições desse porte deveriam incluir planos de mitigação socialmente responsáveis, com diálogo prévio com trabalhadores, poder público e sociedade civil, além de um período de transição mais adequado às necessidades da comunidade local.</p>
+                    </div>
+
+                    <h3>👥 Reação sindical e organizações de trabalhadores</h3>
+                    <p>O Sindicato da Alimentação de São Paulo e Região tem se manifestado fortemente contra o fechamento, destacando a contradição entre o slogan corporativo "Cuidamos de Vidas" e o impacto social gerado. Materiais de protesto circulam nas redes sociais com a mensagem "TRABALHADOR DA YOKI NÃO DESISTE, VAI BUSCAR OS SEUS DIREITOS", refletindo a mobilização em torno da causa. Reuniões têm sido realizadas para garantir que todos os direitos trabalhistas sejam respeitados e para buscar alternativas coletivas.</p>
+
+                    <h3>🔮 Perspectivas futuras e caminhos possíveis</h3>
+                    <p>A situação exige ação coordenada entre poder público municipal, estadual, entidades representativas dos trabalhadores e iniciativa privada. Enquanto soluções de longo prazo são planejadas, medidas emergenciais são necessárias para garantir a sobrevivência econômica das famílias afetadas. O caso de Cambará serve como alerta para outras cidades do interior que dependem de uma ou poucas grandes empregadoras, destacando a necessidade de diversificação econômica como estratégia de resiliência municipal e planejamento urbano regional integrado.</p>
+
+                </div>
+
+                <div class="post-meta" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eaeaea;">
+                    <span><span class="icon">📍</span> Local: Cambará/PR - Região Industrial</span>
+                    <span><span class="icon">🏭</span> Responsável: Secretaria de Desenvolvimento Econômico e Trabalho</span>
+                    <span><span class="icon">🤝</span> Envolvidos: Sindicato da Alimentação, Associação Comercial, Câmara Municipal</span>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cambará+</h3>
+                    <p>Portal de reclamações e sugestões da<br> cidade de Cambará-PR.</p>
+                </div>
                 
-
-                <p>A proposta da empresa de realocar parte dos funcionários para uma unidade em cidade vizinha enfrenta graves obstáculos logísticos. A ausência de transporte intermunicipal eficiente e acessível torna inviável para a maioria dos trabalhadores aceitar a transferência. Muitos não possuem veículo próprio e o custo de deslocamento diário superaria o valor do salário recebido. Desta forma, a alternativa oferecida pela empresa mostra-se ineficaz, elevando dramaticamente os índices de desemprego formal no município.</p>
-
-                <div class="post-status">
-                    <div class="status-label">📉 Situação atual crítica:</div>
-                    <div>O município enfrenta um aumento acelerado no número de desempregados, afetando diretamente o comércio, a arrecadação municipal e a estabilidade social. Projeções indicam que o fechamento pode resultar na perda indireta de até 800 postos de trabalho na região, criando um efeito cascata que pode durar anos.</div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <a href="index.html">Início</a>
+                    <a href="enviar.html">Enviar Reclamação/Sugestão/Elogio</a>
+                    <a href="resolucoes.html">Acompanhar Resoluções</a>
                 </div>
-
-                <div class="tribute-box">
-                    <h3 style="color: #1e3a5f; margin-bottom: 15px;">Impacto Social</h3>
-                    <p style="font-size: 18px; margin-bottom: 10px;"><strong>Mais de 350 famílias diretamente afetadas</strong></p>
-                    <p style="margin-bottom: 15px;">Gerações de trabalhadores dependiam da fábrica como fonte única de renda</p>
-                    <p style="font-style: italic; color: #555;">"Fechar uma fábrica com 40 anos não é apenas uma decisão empresarial - é romper com a história de uma comunidade inteira." - Liderança sindical</p>
-                </div>
-
-                <h3>📋 Propostas estratégicas para mitigação da crise</h3>
                 
-                <img class="post-medium-img" src="https://i.imgur.com/rxC27t6.jpeg" alt="Reunião entre trabalhadores e representantes sindicais">
-
-                <br><p>Especialistas em desenvolvimento econômico regional e lideranças comunitárias apontam que o momento exige respostas coordenadas e imediatas. Diversas frentes de ação são consideradas prioritárias para amenizar os impactos socioeconômicos:</p>
-
-                <div class="solution-box">
-                    <h4>📋 Plano de Ação Estratégico Recomendado:</h4>
-                    <ul>
-                        <li><strong>Transporte subsidiado emergencial:</strong> Negociação urgente com empresas de transporte e governo estadual para criação de linhas intermunicipais com tarifas reduzidas ou gratuidade para trabalhadores realocados.</li>
-                        <li><strong>Programa de requalificação profissional acelerada:</strong> Parceria com SENAI, SENAC e instituições de ensino para cursos de curta duração focados em setores com demanda regional.</li>
-                        <li><strong>Fomento ao microempreendedorismo:</strong> Linhas de crédito facilitadas, assessoria técnica e simplificação burocrática para trabalhadores que desejam iniciar negócios próprios.</li>
-                        <li><strong>Atração de novas indústrias:</strong> Elaboração de um plano de incentivos fiscais e logísticos para atrair empresas de setores compatíveis com a mão de obra disponível.</li>
-                        <li><strong>Rede de apoio psicossocial:</strong> Criação de programas municipais de assistência psicológica e social para famílias afetadas pelo desemprego.</li>
-                        <li><strong>Bolsa-transporte emergencial:</strong> Auxílio financeiro temporário para custear deslocamento até novas oportunidades de emprego.</li>
-                        <li><strong>Feiras de emprego regionais:</strong> Organização de eventos que conectem trabalhadores a empregadores de cidades vizinhas.</li>
-                    </ul>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>E-mail: contato@cambaramais.com.br</p>
+                    <p>Telefone: (43) 9999-9999</p>
+                    <p>Endereço: Rua A, nº 999 - Centro - Cambará/PR</p>
                 </div>
-
-                <h3>📉 Crise estrutural no transporte e mobilidade</h3>
-                <p>A precariedade do transporte regional, já conhecida pela população, revelou-se um dos principais obstáculos na crise. Sem linhas regulares, com horários inadequados para turnos industriais e tarifas elevadas, a mobilidade dos trabalhadores torna-se economicamente inviável, impedindo que oportunidades de emprego em cidades vizinhas sejam verdadeiramente acessíveis. Esta deficiência estrutural amplifica os efeitos negativos do fechamento da fábrica.</p>
-
-                <h3>📊 Impactos em cadeia na economia local</h3>
-                <p>Além dos empregos diretos perdidos, o fechamento afeta profundamente a economia circular de Cambará. Estabelecimentos comerciais que dependiam da movimentação dos funcionários já registram quedas significativas. O setor imobiliário também sente os efeitos, com aumento de oferta de imóveis para aluguel e redução nos preços, indicando possível êxodo de famílias em busca de oportunidades em outras cidades. A arrecadação municipal com ISS e outros tributos também sofrerá redução significativa.</p>
-
-                <div class="warning-box">
-                    <strong>📢 RESPONSABILIDADE SOCIAL EMPRESARIAL:</strong> 
-                    <p style="margin-top: 10px;">O caso da Yoki/General Mills levanta questões importantes sobre a responsabilidade social de grandes corporações em comunidades onde atuam por décadas. Especialistas defendem que transições desse porte deveriam incluir planos de mitigação socialmente responsáveis, com diálogo prévio com trabalhadores, poder público e sociedade civil, além de um período de transição mais adequado às necessidades da comunidade local.</p>
-                </div>
-
-                <h3>👥 Reação sindical e organizações de trabalhadores</h3>
-                <p>O Sindicato da Alimentação de São Paulo e Região tem se manifestado fortemente contra o fechamento, destacando a contradição entre o slogan corporativo "Cuidamos de Vidas" e o impacto social gerado. Materiais de protesto circulam nas redes sociais com a mensagem "TRABALHADOR DA YOKI NÃO DESISTE, VAI BUSCAR OS SEUS DIREITOS", refletindo a mobilização em torno da causa. Reuniões têm sido realizadas para garantir que todos os direitos trabalhistas sejam respeitados e para buscar alternativas coletivas.</p>
-
-                <h3>🔮 Perspectivas futuras e caminhos possíveis</h3>
-                <p>A situação exige ação coordenada entre poder público municipal, estadual, entidades representativas dos trabalhadores e iniciativa privada. Enquanto soluções de longo prazo são planejadas, medidas emergenciais são necessárias para garantir a sobrevivência econômica das famílias afetadas. O caso de Cambará serve como alerta para outras cidades do interior que dependem de uma ou poucas grandes empregadoras, destacando a necessidade de diversificação econômica como estratégia de resiliência municipal e planejamento urbano regional integrado.</p>
-
             </div>
-
-            <div class="post-meta" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eaeaea;">
-                <span><span class="icon">📍</span> Local: Cambará/PR - Região Industrial</span>
-                <span><span class="icon">🏭</span> Responsável: Secretaria de Desenvolvimento Econômico e Trabalho</span>
-                <span><span class="icon">🤝</span> Envolvidos: Sindicato da Alimentação, Associação Comercial, Câmara Municipal</span>
-            </div>
-
-        </section>
-
-       
-
-    </div>
-
-</main>
-
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Cambará+</h3>
-                <p>Portal de reclamações e notícias da cidade.</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Links Rápidos</h3>
-                <a href="index.html">Início</a>
-                <a href="enviar.html">Enviar Reclamação</a>
-                <a href="resolucoes.html">Resoluções</a>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contato</h3>
-                <p>E-mail: contato@cambaramais.com.br</p>
-                <p>Telefone: (43) 9999-9999</p>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Cambará+. Todos os direitos reservados. 
+                <br>Desenvolvido pelos alunos do curso Programador WEB - Instituto Bourbon.</p>
             </div>
         </div>
-
-        <div class="copyright">
-            <p>&copy; 2025 Cambará+. Todos os direitos reservados.</p>
-        </div>
-    </div>
-</footer>
-
+    </footer>
 </body>
 </html>
